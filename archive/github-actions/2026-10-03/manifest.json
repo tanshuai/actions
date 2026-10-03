@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "repository": "tanshuai/actions",
+  "repository_id": 465541210,
+  "date": "2026-10-03",
+  "source_sha": "20ce1c37da449da05fc5717df08588f3cc53a209",
+  "entries": [
+    {
+      "original_path": ".github/workflows/ci-test.yml",
+      "archived_path": "archive/github-actions/2026-10-03/.github/workflows/ci-test.yml",
+      "source_blob_sha": "728246437155da170dc379df8237f4d2175b0471",
+      "sha256": "6b21d7f003110d04114a6fa0db7d5b950045739008bf6ee3e5fac05b6e954d33",
+      "workflow_id": null,
+      "workflow_state_before": null,
+      "business_consumer": "Inherited upstream-only automation from diem/actions",
+      "retirement_reason": "No current custom development/deployment consumer identified; owner-approved archival of inherited fork automation; preserve source and passive security alerts",
+      "config_finding_ids": [
+        "CFG-001",
+        "CFG-006"
+      ],
+      "secret_names": [],
+      "external_entrypoint_types": [],
+      "local_dependency_paths": [],
+      "restore": "Restore archived YAML and the listed dependency snapshots in a reviewed PR; validate runtime/action versions, consumers and write destinations before explicitly re-enabling the original workflow ID."
+    },
+    {
+      "original_path": ".github/workflows/test-download-artifacts.yml",
+      "archived_path": "archive/github-actions/2026-10-03/.github/workflows/test-download-artifacts.yml",
+      "source_blob_sha": "abb86088fefad7c6feb474687b9b392dedc0dc73",
+      "sha256": "740524d883eb58a73da5825007d650f213d3c83d99997a50a1fcdec74a1c15bc",
+      "workflow_id": null,
+      "workflow_state_before": null,
+      "business_consumer": "Inherited upstream-only automation from diem/actions",
+      "retirement_reason": "No current custom development/deployment consumer identified; owner-approved archival of inherited fork automation; preserve source and passive security alerts",
+      "config_finding_ids": [],
+      "secret_names": [
+        "GITHUB_TOKEN"
+      ],
+      "external_entrypoint_types": [],
+      "local_dependency_paths": [
+        "get-artifacts/action.yml",
+        "get-artifacts/get_artifacts.sh"
+      ],
+      "restore": "Restore archived YAML and the listed dependency snapshots in a reviewed PR; validate runtime/action versions, consumers and write destinations before explicitly re-enabling the original workflow ID."
+    }
+  ],
+  "code_and_dependency_snapshots": [
+    {
+      "original_path": "get-artifacts/action.yml",
+      "archived_path": "archive/github-actions/2026-10-03/get-artifacts/action.yml",
+      "source_blob_sha": "d8962a2038c8e74ed9ee460693f321e03bef7f90",
+      "sha256": "1b3f1d125f2e294e3aaed601f698d39312fa8e543bf344082ffca58f453065f7",
+      "original_retained": true,
+      "reason": "workflow-local/direct code or dependency configuration copied for recovery; shared source left in place"
+    },
+    {
+      "original_path": "get-artifacts/get_artifacts.sh",
+      "archived_path": "archive/github-actions/2026-10-03/get-artifacts/get_artifacts.sh",
+      "source_blob_sha": "ee8152ae44de4d8adc6931e02c24084b1abad18e",
+      "sha256": "f1b003d0954bea69fd4f27de263d7da4a7b271f6bb5d7e847077c92348ce775d",
+      "original_retained": true,
+      "reason": "workflow-local/direct code or dependency configuration copied for recovery; shared source left in place"
+    }
+  ],
+  "upstream_preflight": {
+    "parent": "diem/actions",
+    "source_sha": "20ce1c37da449da05fc5717df08588f3cc53a209",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "status": "identical",
+    "retained_runs": 0,
+    "semantic_note": "Current entrypoints reviewed individually; only inherited upstream CI/tests/releases/doc generators, no custom fork commits or live production consumer identified. No repository Actions enabling or passive alert changes."
+  },
+  "caller_check": {
+    "current_all_accessible_workflows": 286,
+    "remaining_reusable_callers": [],
+    "external_dispatch_note": "Declared dispatch/manual entrypoints recorded; entire retired source preserved. No dispatch APIs were invoked."
+  },
+  "passive_security_alerts": "No alert setting changed. Archived version-update YAML is no longer active configuration.",
+  "rollback": "Reviewed source restoration plus explicit workflow enablement; for unsafe cross-repository publishers establish an updated producer/consumer contract and guarded destination before restoring."
+}
